@@ -19,3 +19,8 @@ function deleteFromEmployeeByKey(employee, key) {
     delete delEmployee[key];
     return delEmployee;
 }
+
+function destructivelyDeleteFromEmployeeByKey(employee, key) {
+    let desDelEmployee = delete employee[key];
+    return employee;
+}
