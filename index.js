@@ -13,3 +13,9 @@ function destructivelyUpdateEmployeeWithKeyAndValue(employee, key, value) {
     employee[key] = value;
     return employee;
 }
+
+function deleteFromEmployeeByKey(employee, key) {
+    let delEmployee = Object.assign({}, employee);
+    delete delEmployee[key];
+    return delEmployee;
+}
